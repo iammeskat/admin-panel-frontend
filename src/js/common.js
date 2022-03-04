@@ -16,6 +16,7 @@ const openSubMenu = (divId) => {
 
 function sidebarHandler() {
     let btnSidebar = document.getElementById("btn-sidebar");
+    let siidebarInner = document.getElementById("sidebar-inner");
     let logo = document.getElementById('logo');
     let footer = document.getElementById('footer');
     let sidebar = document.getElementById('sidebar');
@@ -57,6 +58,7 @@ function sidebarHandler() {
         footer.style.display = "block";
         sidebar.style.minWidth = "256px";
         btnSidebar.style.transform = "rotate(0deg)";
+        siidebarInner.style.paddingRight = "0px";
 
 
     } else {
@@ -65,6 +67,7 @@ function sidebarHandler() {
         footer.style.display = "none";
         sidebar.style.minWidth = "80px";
         btnSidebar.style.transform = "rotate(180deg)";
+        siidebarInner.style.paddingRight = "16px";
     }
 };
 
