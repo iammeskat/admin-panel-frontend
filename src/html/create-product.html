@@ -527,15 +527,15 @@
                                             Description</label>
                                         <textarea id="" rows="2"
                                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:outline-none focus:border focus:border-gray-500 block w-full p-2.5"
-                                            placeholder="Enter product short description"></textarea>
+                                            placeholder="Enter short description"></textarea>
                                     </div>
                                     <div class="flex flex-col">
                                         <label for="full-description"
                                             class="block mb-2 text-sm font-medium text-gray-900">Full
                                             Description</label>
-                                        <textarea id="full-description"
+                                        <textarea id="full-description" rows="8"
                                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:outline-none focus:border focus:border-gray-500 block w-full p-2.5"
-                                            placeholder="Enter product short description"></textarea>
+                                            placeholder="Enter full description"></textarea>
                                     </div>
                                     <div class="flex flex-col">
                                         <label for="product-image"
@@ -599,10 +599,10 @@
                                 </div>
                                 <div class="p-4 rounded bg-white space-y-4">
                                     <div class="flex flex-col">
-                                        <label for="colors"
+                                        <label for="color"
                                             class="block mb-2 text-sm font-medium text-gray-900">Color</label>
-                                        <input type=text" id="colors"
-                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:outline-none focus:border focus:border-gray-500 block w-full p-2.5"
+                                        <input type="color" id="color" value="#ffffff"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:outline-none focus:border focus:border-gray-500 block w-full h-10"
                                             placeholder="Enter color name" required>
                                     </div>
                                     <div class="flex flex-col">
@@ -674,9 +674,9 @@
     <!-- start js  -->
     <script src="../js/common.js"></script>
     <script src="../js/modal.js"></script>
-    <script src="../js/ckeditor.js"></script>
+    <!-- <script src="../js/ckeditor.js"></script> -->
     <!-- <script src="https://cdn.ckeditor.com/ckeditor5/29.2.0/classic/ckeditor.js"></script> -->
-    <script>
+    <!-- <script>
         ClassicEditor.create(document.querySelector('#full-description')).catch((error) => {
             console.error(error);
         });
@@ -686,10 +686,11 @@
             config.height = 300;
             config.toolbarCanCollapse = true;
         };
-    </script>
+    </script> -->
     <script type='text/javascript' src='//code.jquery.com/jquery-1.9.1.js'></script>
     <script src="../js/multipleImage.js"></script>
     <!-- end js  -->
+
 
 </body>
 
