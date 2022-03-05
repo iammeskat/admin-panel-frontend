@@ -12,6 +12,12 @@
     .other{
         @apply -mt-8 ml-9 pl-3  w-44 border-l-[1rem] border-gray-800;
     }
+    .ck-editor__editable {
+      min-height: 200px;
+  }
+  #preview-image img{
+    @apply border shadow rounded h-32 w-32;
+  }
 }
 
 @layer utilities {
@@ -47,4 +53,5 @@
   .scrollbar-reviews::-webkit-scrollbar-thumb:hover {
     @apply bg-gray-500;
   }
+
 }
